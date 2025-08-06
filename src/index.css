@@ -1,0 +1,278 @@
+/* roblox.css */
+:root {
+  --roblox-primary: #00a2ff;
+  --roblox-dark: #2c2f33;
+  --roblox-light: #f2f2f2;
+  --roblox-section: #ffffff;
+  --roblox-section-alt: #f9f9f9;
+}
+
+/* Base Styles */
+.roblox-theme {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--roblox-light);
+}
+
+/* Hero Section */
+.roblox-hero {
+  background: linear-gradient(135deg, #0066ff 0%, #00a2ff 100%);
+}
+
+.roblox-title {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.roblox-subtitle {
+  font-weight: 500;
+}
+
+.roblox-main-btn {
+  background-color: #ff6b00;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.roblox-main-btn:hover {
+  background-color: #e65c00;
+}
+
+.roblox-hero-img {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Sections */
+.roblox-section {
+  background-color: var(--roblox-section);
+}
+
+.roblox-section-alt {
+  background-color: var(--roblox-section-alt);
+}
+
+.roblox-section-title {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--roblox-dark);
+}
+
+/* Roblox Login Modal Styles */
+.roblox-login-modal {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.roblox-login-modal .modal-content {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.roblox-input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.roblox-input:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.roblox-login-btn {
+  background-color: #00a2ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.roblox-login-btn:hover {
+  background-color: #0088cc;
+}
+
+.roblox-link {
+  color: #00a2ff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.roblox-link:hover {
+  text-decoration: underline;
+  color: #0088cc;
+}
+
+.pet-card .btn-success {
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 8px 16px;
+  transition: background-color 0.2s;
+}
+
+.pet-card .btn-success:hover {
+  background-color: #218838;
+}
+
+.rarity-divine {
+  color: #fd7e14;
+  font-weight: bold;
+}
+
+Add this if you want different colors for different rarities
+/* .rarity-common {
+  color: #6c757d;
+}
+
+.rarity-rare {
+  color: #007bff;
+}
+
+.rarity-epic {
+  color: #6f42c1;
+}
+
+.rarity-legendary {
+  color: #fd7e14;
+} */
+
+/* Navbar Styles */
+.custom-navbar {
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  height: 40px; /* Fixed height for consistency */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+.brand-text {
+  font-weight: 600;
+  font-size: 1.25rem;
+  background: linear-gradient(to right, #4CAF50, #8BC34A);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar-btn {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    padding: 1rem 0;
+  }
+  
+  .navbar-btn {
+    width: 100%;
+    justify-content: center;
+    margin: 0.25rem 0;
+  }
+  
+  .brand-text {
+    font-size: 1.1rem;
+  }
+}
+
+/* Enhanced Roblox Auth Modal Styles */
+.roblox-auth-modal .modal-content {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.roblox-modal-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+.roblox-modal-subtitle {
+  font-size: 14px;
+  color: #727272;
+  margin-bottom: 20px;
+}
+
+.roblox-form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #727272;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.roblox-input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.roblox-input:focus {
+  border-color: #00a2ff;
+  box-shadow: 0 0 0 2px rgba(0, 162, 255, 0.2);
+}
+
+.roblox-login-btn {
+  background-color: #00a2ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.roblox-login-btn:hover {
+  background-color: #0088cc;
+  transform: translateY(-1px);
+}
+
+.roblox-signup-text {
+  color: #727272;
+  font-size: 14px;
+}
+
+.roblox-signup-link {
+  color: #00a2ff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.roblox-signup-link:hover {
+  text-decoration: underline;
+  color: #0088cc;
+}
+
+/* Navbar (keep your existing RobloxNavbar component) */
+/* MissionCard/PetCard (keep your existing components) */
