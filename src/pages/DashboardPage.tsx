@@ -97,7 +97,7 @@ const DashboardPage = () => {
     xpNeeded: 2000,
     plantsPlanted: 42,
     petsCollected: 7,
-    profileImage: "/src/assets/images/av.png"
+    profileImage: "/images/av.png"
   };
 
   // Sample active missions
