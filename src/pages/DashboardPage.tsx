@@ -117,17 +117,14 @@ const DashboardPage = () => {
   // State for modal and claimed pets
   const [showModal, setShowModal] = useState(false);
   const [claimedPets, setClaimedPets] = useState<number[]>([]);
-  const [currentPet, setCurrentPet] = useState<number | null>(null);
 
   const handleClaimClick = (petId: number) => {
-    setCurrentPet(petId);
     setShowModal(true);
     setClaimedPets([...claimedPets, petId]);
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
-    setCurrentPet(null);
   };
 
   return (

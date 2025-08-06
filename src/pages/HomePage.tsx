@@ -7,7 +7,7 @@ import AuthModal from '../components/AuthModal';
 
 const HomePage = () => {
   const [showLogin, setShowLogin] = useState(false);
-  const [loggedIn, setLoggedIn] = useState(false);
+  const loggedIn = false; // Simplified since we never change this value
 
   const missions = [
     { id: 1, task: "Water 10 plants", reward: "Rainbow Egg" },

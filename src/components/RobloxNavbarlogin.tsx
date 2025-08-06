@@ -1,5 +1,5 @@
 import { Navbar, Container, Button } from 'react-bootstrap';
-import { FaLeaf, FaUser } from 'react-icons/fa';
+import { FaUser } from 'react-icons/fa';
 import { useState } from 'react';
 import AuthModal from './AuthModal';
 import { useNavigate } from 'react-router-dom';
@@ -7,10 +7,6 @@ import { useNavigate } from 'react-router-dom';
 const RobloxNavbarlogin = () => {
   const [showAuthModal, setShowAuthModal] = useState(false);
   const navigate = useNavigate();
-
-  const handleLoginClick = () => {
-    setShowAuthModal(true);
-  };
 
   const handleLogoutClick = () => {
     // Add any logout logic here (like clearing tokens, etc.)
