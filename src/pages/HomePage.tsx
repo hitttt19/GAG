@@ -5,6 +5,13 @@ import MissionCard from '../components/MissionCard';
 import PetCard from '../components/PetCard';
 import AuthModal from '../components/AuthModal';
 
+// Import all images
+import racconImg from '../assets/images/raccon.png';
+import dgflyImg from '../assets/images/dgfly.png';
+import mimicImg from '../assets/images/mimic.png';
+import dsImg from '../assets/images/ds.png';
+import heroImg from '../assets/images/ggsf.jpg';
+
 const HomePage = () => {
   const [showLogin, setShowLogin] = useState(false);
   const loggedIn = false; // Simplified since we never change this value
@@ -15,10 +22,10 @@ const HomePage = () => {
   ];
 
   const pets = [
-    { id: 1, name: "", rarity: "Divine", image: "/src/assets/images/raccon.png" },
-    { id: 2, name: "", rarity: "Divine", image: "/src/assets/images/dgfly.png" },
-    { id: 3, name: "", rarity: "Divine", image: "/src/assets/images/mimic.png" },
-    { id: 4, name: "", rarity: "Divine", image: "/src/assets/images/ds.png" },
+    { id: 1, name: "", rarity: "Divine", image: racconImg },
+    { id: 2, name: "", rarity: "Divine", image: dgflyImg },
+    { id: 3, name: "", rarity: "Divine", image: mimicImg },
+    { id: 4, name: "", rarity: "Divine", image: dsImg },
   ];
 
   const handleClaimClick = () => {
@@ -51,7 +58,7 @@ const HomePage = () => {
             </Col>
             <Col lg={6}>
               <img 
-                src="/src/assets/images/ggsf.jpg" 
+                src={heroImg} 
                 alt="Game Preview" 
                 className="img-fluid rounded-3 roblox-hero-img"
               />
