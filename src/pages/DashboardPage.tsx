@@ -3,6 +3,13 @@ import { Container, Row, Col, Card, ProgressBar, Button, Modal } from 'react-boo
 import RobloxNavbar from '../components/RobloxNavbarlogin';
 import { FaLeaf, FaTrophy, FaSeedling } from 'react-icons/fa';
 
+// Import all images
+import racconImg from '../assets/images/raccon.png';
+import dgflyImg from '../assets/images/dgfly.png';
+import mimicImg from '../assets/images/mimic.png';
+import dsImg from '../assets/images/ds.png';
+import profileImg from '../assets/images/av.png';
+
 interface User {
   name: string;
   level: number;
@@ -97,7 +104,7 @@ const DashboardPage = () => {
     xpNeeded: 2000,
     plantsPlanted: 42,
     petsCollected: 7,
-    profileImage: "/images/av.png"
+    profileImage: profileImg
   };
 
   // Sample active missions
@@ -108,10 +115,10 @@ const DashboardPage = () => {
 
   // Sample available pets
   const availablePets: Pet[] = [
-    { id: 1, name: "Raccoon", rarity: "Divine", image: "/src/assets/images/raccon.png" },
-    { id: 2, name: "Dragonfly", rarity: "Divine", image: "/src/assets/images/dgfly.png" },
-    { id: 3, name: "Mimic", rarity: "Divine", image: "/src/assets/images/mimic.png" },
-    { id: 4, name: "Disco Bee", rarity: "Divine", image: "/src/assets/images/ds.png" }
+    { id: 1, name: "Raccoon", rarity: "Divine", image: racconImg },
+    { id: 2, name: "Dragonfly", rarity: "Divine", image: dgflyImg },
+    { id: 3, name: "Mimic", rarity: "Divine", image: mimicImg },
+    { id: 4, name: "Disco Bee", rarity: "Divine", image: dsImg }
   ];
 
   // State for modal and claimed pets
