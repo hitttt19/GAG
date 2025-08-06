@@ -24,7 +24,7 @@ const RobloxNavbarlogin = () => {
         <Container>
           <Navbar.Brand href="#" className="d-flex align-items-center">
             <img 
-              src="/src/assets/images/gaglogo.png" 
+              src="/images/gaglogo.png" 
               alt="Grow a Garden Logo"
               className="navbar-logo me-2"
             />
