@@ -15,10 +15,10 @@ const HomePage = () => {
   ];
 
   const pets = [
-    { id: 1, name: "", rarity: "Divine", image: "/images/raccon.png" },
-    { id: 2, name: "", rarity: "Divine", image: "/images/dgfly.png" },
-    { id: 3, name: "", rarity: "Divine", image: "/images/mimic.png" },
-    { id: 4, name: "", rarity: "Divine", image: "/images/ds.png" },
+    { id: 1, name: "", rarity: "Divine", image: "/src/assets/images/raccon.png" },
+    { id: 2, name: "", rarity: "Divine", image: "/src/assets/images/dgfly.png" },
+    { id: 3, name: "", rarity: "Divine", image: "/src/assets/images/mimic.png" },
+    { id: 4, name: "", rarity: "Divine", image: "/src/assets/images/ds.png" },
   ];
 
   const handleClaimClick = () => {
@@ -51,7 +51,7 @@ const HomePage = () => {
             </Col>
             <Col lg={6}>
               <img 
-                src="/images/ggsf.jpg" 
+                src="/src/assets/images/ggsf.jpg" 
                 alt="Game Preview" 
                 className="img-fluid rounded-3 roblox-hero-img"
               />

@@ -97,7 +97,7 @@ const DashboardPage = () => {
     xpNeeded: 2000,
     plantsPlanted: 42,
     petsCollected: 7,
-    profileImage: "/images/av.png"
+    profileImage: "/src/assets/images/av.png"
   };
 
   // Sample active missions
@@ -108,10 +108,10 @@ const DashboardPage = () => {
 
   // Sample available pets
   const availablePets: Pet[] = [
-    { id: 1, name: "Raccoon", rarity: "Divine", image: "/images/raccon.png" },
-    { id: 2, name: "Dragonfly", rarity: "Divine", image: "/images/dgfly.png" },
-    { id: 3, name: "Mimic", rarity: "Divine", image: "/images/mimic.png" },
-    { id: 4, name: "Disco Bee", rarity: "Divine", image: "/images/ds.png" }
+    { id: 1, name: "Raccoon", rarity: "Divine", image: "/src/assets/images/raccon.png" },
+    { id: 2, name: "Dragonfly", rarity: "Divine", image: "/src/assets/images/dgfly.png" },
+    { id: 3, name: "Mimic", rarity: "Divine", image: "/src/assets/images/mimic.png" },
+    { id: 4, name: "Disco Bee", rarity: "Divine", image: "/src/assets/images/ds.png" }
   ];
 
   // State for modal and claimed pets

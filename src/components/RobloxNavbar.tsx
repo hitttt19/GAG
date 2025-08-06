@@ -20,7 +20,7 @@ const RobloxNavbar = () => {
         <Container>
           <Navbar.Brand href="#" className="d-flex align-items-center">
             <img 
-              src="/images/gaglogo.png" 
+              src="/src/assets/images/gaglogo.png" 
               alt="Grow a Garden Logo"
               className="navbar-logo me-2"
             />
